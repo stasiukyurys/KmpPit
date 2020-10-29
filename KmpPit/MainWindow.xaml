@@ -5,10 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KmpPit"
         mc:Ignorable="d"
-        Title="Карьер СЗАО &quot;КварцМелПром&quot;" Height="450" Width="800">
+        Title="Карьер СЗАО &quot;КварцМелПром&quot;" Height="680" Width="870" WindowStartupLocation="CenterScreen" MaxWidth="870" MaxHeight="680" MinWidth="870" MinHeight="680">
+    <Window.Background>
+        <ImageBrush ImageSource="PitLogo.jpg" Stretch="Uniform" Opacity="0.5">
+            <ImageBrush.RelativeTransform>
+                <TransformGroup>
+                    <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                    <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                    <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ImageBrush.RelativeTransform>
+        </ImageBrush>
+    </Window.Background>
     <Grid>
-        <Button x:Name="ButtonSand" Content="Песок" HorizontalAlignment="Left" Margin="151,294,0,0" VerticalAlignment="Top" Width="135" Height="47" FontWeight="Bold" FontSize="20"/>
-        <Button x:Name="ButtonAccess" Content="АСКУД" HorizontalAlignment="Left" Margin="487,294,0,0" VerticalAlignment="Top" Width="135" Height="47" FontWeight="Bold" FontSize="20"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="233*"/>
+            <ColumnDefinition Width="70*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ButtonSand" Content="Песок" Margin="10,423,0,0" VerticalAlignment="Top" Height="75" FontWeight="Bold" FontSize="28" Grid.Column="1" HorizontalAlignment="Left" Width="200
+                " Grid.ColumnSpan="2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA07A4B" Offset="1"/>
+                    <GradientStop Color="#FFB8CB43"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ButtonAccess" Content="АСКУД" HorizontalAlignment="Left" Margin="256,423,0,0" VerticalAlignment="Top" Width="200
+                " Height="75" FontWeight="Bold" FontSize="28" Grid.Column="2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF61B9A5" Offset="1"/>
+                    <GradientStop Color="#FFF30404"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
