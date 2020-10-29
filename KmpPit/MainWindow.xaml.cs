@@ -7,6 +7,7 @@ namespace KmpPit
         public MainWindow()
         {
             InitializeComponent();
+            //test
         }
     }
 }
