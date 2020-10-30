@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KmpPit"
         mc:Ignorable="d"
-        Title="Карьер СЗАО &quot;КварцМелПром&quot;" Height="680" Width="870" WindowStartupLocation="CenterScreen" MaxWidth="870" MaxHeight="680" MinWidth="870" MinHeight="680">
+        Title="Карьер СЗАО &quot;КварцМелПром&quot;" Height="680" Width="870" WindowStartupLocation="CenterScreen" MaxWidth="870" MaxHeight="680" MinWidth="870" MinHeight="680" Icon="icon.png" ResizeMode="CanMinimize">
     <Window.Background>
         <ImageBrush ImageSource="FonImage.jpg">
             <ImageBrush.RelativeTransform>
@@ -20,16 +20,17 @@
     </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="70*"/>
-            <ColumnDefinition Width="63*"/>
-            <ColumnDefinition Width="233*"/>
-            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="138*"/>
+            <ColumnDefinition Width="125*"/>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="330*"/>
+            <ColumnDefinition Width="138*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="ButtonSand" Content="Песок" Margin="10,191,0,0" VerticalAlignment="Top" Height="75" FontWeight="Bold" FontSize="24" Grid.Column="1" HorizontalAlignment="Left" Width="200
                 " Grid.ColumnSpan="2"/>
         <Button x:Name="ButtonAccess" Content="АСКУД" HorizontalAlignment="Left" Margin="10,367,0,0" VerticalAlignment="Top" Width="200
                 " Height="75" FontWeight="Bold" FontSize="24" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Label Content="StasiukYuryS@Gmail.com" HorizontalAlignment="Left" Margin="10,597,0,0" VerticalAlignment="Top" Foreground="#FF1154C9" FontWeight="Bold" FontSize="24" Grid.ColumnSpan="3" Width="539" Background="{x:Null}" Opacity="0.5"/>
+        <Label Content="StasiukYuryS@Gmail.com" HorizontalAlignment="Left" Margin="10,597,0,0" VerticalAlignment="Top" Foreground="#FF1154C9" FontWeight="Bold" FontSize="24" Grid.ColumnSpan="4" Width="539" Background="{x:Null}" Opacity="0.5" Height="42"/>
 
     </Grid>
 </Window>
