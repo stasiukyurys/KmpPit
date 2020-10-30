@@ -7,7 +7,17 @@ namespace KmpPit
         public MainWindow()
         {
             InitializeComponent();
-            //test
+            
+        }
+
+        private void ButtonSand_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new PagePit());
+        }
+
+        private void ButtonAccess_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
