@@ -7,7 +7,6 @@ namespace KmpPit
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
         private void ButtonSand_Click(object sender, RoutedEventArgs e)
