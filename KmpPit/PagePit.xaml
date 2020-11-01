@@ -6,16 +6,10 @@
       xmlns:local="clr-namespace:KmpPit"
       mc:Ignorable="d" 
       d:DesignHeight="651" d:DesignWidth="870"
-      Title="PagePit" Width="870">
-    <Page.Background>
-        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="Black" Offset="0"/>
-            <GradientStop Color="Black" Offset="1"/>
-        </LinearGradientBrush>
-    </Page.Background>
+      Title="PagePit" Width="870" Background="#FF030303">
 
     <Grid Margin="10,10,11,10">
-        <Button x:Name="ButtonClose" Content="Назад" HorizontalAlignment="Left" Margin="10,581,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ButtonClose_Click" FontSize="16" FontWeight="Bold" Background="#FF2780EC" Opacity="0.6"/>
+        <Button x:Name="ButtonClose" Content="Назад" HorizontalAlignment="Left" Margin="10,581,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ButtonClose_Click" FontSize="16" FontWeight="Bold" Opacity="0.6" Foreground="#FFBBB8B8" Background="Black"/>
 
     </Grid>
 </Page>

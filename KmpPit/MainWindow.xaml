@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Карьер СЗАО &quot;КварцМелПром&quot;" Height="680" Width="870" WindowStartupLocation="CenterScreen" MaxWidth="870" MaxHeight="680" MinWidth="870" MinHeight="680" Icon="icon.png" ResizeMode="CanMinimize">
     <Window.Background>
-        <ImageBrush ImageSource="FonImage.jpg">
+        <ImageBrush ImageSource="FonBlack.jpg">
             <ImageBrush.RelativeTransform>
                 <TransformGroup>
                     <ScaleTransform CenterY="0.5" CenterX="0.5"/>
@@ -25,10 +25,10 @@
             <ColumnDefinition Width="756*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="ButtonSand" Content="ПЕСОК" Margin="10,191,0,0" VerticalAlignment="Top" Height="75" FontWeight="Bold" FontSize="24" Grid.Column="2" HorizontalAlignment="Left" Width="200
-                " Grid.ColumnSpan="1" Background="{x:Null}" Foreground="#FF3B3B3B" BorderBrush="#FFB5B5B5" Click="ButtonSand_Click"/>
+                " Grid.ColumnSpan="1" Background="{x:Null}" Foreground="#FF717171" BorderBrush="#FF1B1B1B" Click="ButtonSand_Click"/>
         <Button x:Name="ButtonAccess" Content="АСКУД" HorizontalAlignment="Left" Margin="10,367,0,0" VerticalAlignment="Top" Width="200
-                " Height="75" FontWeight="Bold" FontSize="24" Grid.Column="2" Grid.ColumnSpan="1" Background="{x:Null}" Foreground="#FF3B3B3B" BorderBrush="#FFB5B5B5" Click="ButtonAccess_Click"/>
-        <Label x:Name="AdminEmail" Content="StasiukYuryS@Gmail.com" HorizontalAlignment="Left" Margin="408,467,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="298" Background="{x:Null}" Opacity="0.5" Height="42" Grid.Column="2" RenderTransformOrigin="0.5,0.5">
+                " Height="75" FontWeight="Bold" FontSize="24" Grid.Column="2" Grid.ColumnSpan="1" Background="{x:Null}" Foreground="#FF717171" BorderBrush="#FF1B1B1B" Click="ButtonAccess_Click"/>
+        <Label x:Name="AdminEmail" Content="StasiukYuryS@Gmail.com" HorizontalAlignment="Left" Margin="408,467,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="298" Background="{x:Null}" Opacity="0.5" Height="42" Grid.Column="2" RenderTransformOrigin="0.5,0.5" Foreground="#FFDA7B7B">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
