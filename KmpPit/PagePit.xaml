@@ -18,7 +18,8 @@
         <Label Content="Данные от:" HorizontalAlignment="Left" Margin="10,9,0,0" Foreground="#FFDA5517" Background="{x:Null}" FontSize="18" FontWeight="Bold" VerticalAlignment="Top"/>
         <Label Content="по:" HorizontalAlignment="Left" Margin="300,8,0,0" Foreground="#FFDA5517" Background="{x:Null}" FontSize="18" FontWeight="Bold" VerticalAlignment="Top"/>
         <DatePicker HorizontalAlignment="Left" FontSize="18" Margin="342,10,0,0" VerticalAlignment="Top" Width="146" FontWeight="Bold" Background="#FFDA5517" Foreground="#FF333333" Opacity="0.5"/>
-        <ListBox x:Name="PitListBox" HorizontalAlignment="Left" Height="453" Margin="0,59,0,0" VerticalAlignment="Top" Width="829" Background="{x:Null}" Foreground="#FFDA5517" FontSize="16" FontWeight="Bold" Opacity="0.6"/>
+        <ListBox x:Name="PitListBox" HorizontalAlignment="Left" Height="53" Margin="150,567,0,0" VerticalAlignment="Top" Width="291" Background="{x:Null}" Foreground="#FFDA5517" FontSize="16" FontWeight="Bold" Opacity="0.6"/>
+        <DataGrid x:Name="grid" HorizontalAlignment="Left" Height="481" Margin="10,61,0,0" VerticalAlignment="Top" Width="819" Background="#FF060505" Foreground="#FFDA5517" FontWeight="Bold" FontSize="18" Opacity="0.6" HorizontalGridLinesBrush="#FF28A7CD" VerticalGridLinesBrush="#FF28A7CD" SelectionChanged="grid_SelectionChanged"/>
 
     </Grid>
 </Page>
