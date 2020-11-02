@@ -9,7 +9,6 @@
       Title="PagePit" Width="870" Background="#FF030303">
 
     <Grid Margin="10,10,11,10">
-        <Button x:Name="ButtonClose" Content="Назад" HorizontalAlignment="Left" Margin="10,581,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ButtonClose_Click" FontSize="16" FontWeight="Bold" Opacity="0.6" Foreground="#FFBBB8B8" Background="Black"/>
-
+        <Button x:Name="ButtonClose" Content="назад" HorizontalAlignment="Left" Margin="10,571,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="ButtonClose_Click" FontSize="22" FontWeight="Bold" Foreground="#FFDA5517" Background="{x:Null}" BorderBrush="#FF1B1B1B"/>
     </Grid>
 </Page>
