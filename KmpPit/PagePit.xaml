@@ -14,10 +14,11 @@
         <Label Content="ИТОГО тонн песка:" HorizontalAlignment="Left" Margin="479,587,0,0" Foreground="#FFDA5517" Background="{x:Null}" FontSize="18" FontWeight="Bold" VerticalAlignment="Top"/>
         <Label Content="0" HorizontalAlignment="Left" Margin="670,538,0,0" Foreground="White" Background="{x:Null}" FontSize="22" FontWeight="Bold" VerticalAlignment="Top" Width="169"/>
         <Label Content="0" HorizontalAlignment="Left" Margin="670,583,0,0" Foreground="White" Background="{x:Null}" FontSize="22" FontWeight="Bold" VerticalAlignment="Top" Width="169"/>
-        <DataGrid HorizontalAlignment="Left" Height="489" Margin="10,48,0,0" VerticalAlignment="Top" Width="819" Background="#FF1B1B1B" Foreground="#FFA03B3B"/>
         <DatePicker HorizontalAlignment="Left" FontSize="18" Margin="135,9,0,0" VerticalAlignment="Top" Width="146" FontWeight="Bold" Background="#FFDA5517" Foreground="#FF333333" Opacity="0.5"/>
         <Label Content="Данные от:" HorizontalAlignment="Left" Margin="10,9,0,0" Foreground="#FFDA5517" Background="{x:Null}" FontSize="18" FontWeight="Bold" VerticalAlignment="Top"/>
         <Label Content="по:" HorizontalAlignment="Left" Margin="300,8,0,0" Foreground="#FFDA5517" Background="{x:Null}" FontSize="18" FontWeight="Bold" VerticalAlignment="Top"/>
         <DatePicker HorizontalAlignment="Left" FontSize="18" Margin="342,10,0,0" VerticalAlignment="Top" Width="146" FontWeight="Bold" Background="#FFDA5517" Foreground="#FF333333" Opacity="0.5"/>
+        <ListBox x:Name="PitListBox" HorizontalAlignment="Left" Height="453" Margin="0,59,0,0" VerticalAlignment="Top" Width="829" Background="{x:Null}" Foreground="#FFDA5517" FontSize="16" FontWeight="Bold" Opacity="0.6"/>
+
     </Grid>
 </Page>
