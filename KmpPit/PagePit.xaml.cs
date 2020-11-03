@@ -56,7 +56,7 @@ namespace KmpPit
             OleDbDataReader reader = command.ExecuteReader();
             // в цикле построчно читаем ответ от БД
             List<MyTable> result = new List<MyTable>(3);
-            float Tonne = 0;
+            double Tonne = 0;
             int Count = 0;
             while (reader.Read())
             {
@@ -76,6 +76,7 @@ namespace KmpPit
             reader.Close();
             grid.ItemsSource = result;
             CountRoute.Content = Count.ToString();
+            Tonne = Math.Round(Tonne, 2);
             TonneSands.Content = Tonne.ToString();
         }
 
@@ -89,5 +90,12 @@ namespace KmpPit
         {
 
         }
+
+        private void filtr_Click(object sender, RoutedEventArgs e)
+        {
+
+
+        }
+
     }
 }
