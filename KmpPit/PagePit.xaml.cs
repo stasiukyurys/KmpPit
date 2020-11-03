@@ -48,10 +48,18 @@ namespace KmpPit
             myConnection = new OleDbConnection(connectString);
             myConnection.Open();
             // текст запроса
-            string query = "SELECT Дата, Время, Авто, Н_карты, Вес_авто, Брутто, Нетто FROM VES ORDER BY Дата";
+            // "WHERE Нетто BETWEEN 10 AND 21; ";
+            //DateTime thisDay = DateTime.Today;
+            DateTime myDateTime = DateTime.Now;
+            string query = "SELECT Дата, Время, Авто, Н_карты, Вес_авто, Брутто, Нетто FROM VES " +
+                           "WHERE Нетто BETWEEN 10 AND 21";
+            
+
 
             // создаем объект OleDbCommand для выполнения запроса к БД MS Access
             OleDbCommand command = new OleDbCommand(query, myConnection);
+            command.Parameters.AddWithValue("@DT", myDateTime);
+            command.Parameters.AddWithValue("@avto", "AK 8266-1");
             // получаем объект OleDbDataReader для чтения табличного результата запроса SELECT
             OleDbDataReader reader = command.ExecuteReader();
             // в цикле построчно читаем ответ от БД
