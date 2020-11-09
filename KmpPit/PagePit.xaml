@@ -14,10 +14,10 @@
         <Label Content="ИТОГО тонн песка:" HorizontalAlignment="Left" Margin="176,577,0,0" Foreground="#FFDA5517" Background="{x:Null}" FontSize="18" FontWeight="Bold" VerticalAlignment="Top"/>
         <Label x:Name="CountRoute" Content="0" HorizontalAlignment="Left" Margin="367,543,0,0" Foreground="#FF0017FF" Background="{x:Null}" FontSize="22" FontWeight="Bold" VerticalAlignment="Top" Width="169"/>
         <Label x:Name="TonneSands" Content="0" HorizontalAlignment="Left" Margin="367,579,0,0" Foreground="#FF0017FF" Background="{x:Null}" FontSize="22" FontWeight="Bold" VerticalAlignment="Top" Width="169"/>
-        <DatePicker HorizontalAlignment="Left" FontSize="18" Margin="135,9,0,0" VerticalAlignment="Top" Width="146" FontWeight="Bold" Background="#FFDA5517" Foreground="#FF333333" Opacity="0.7"/>
+        <DatePicker x:Name="DataIN" HorizontalAlignment="Left" FontSize="18" Margin="135,9,0,0" VerticalAlignment="Top" Width="146" FontWeight="Bold" Background="#FFDA5517" Foreground="#FF333333" Opacity="0.7"/>
         <Label Content="Данные от:" HorizontalAlignment="Left" Margin="10,9,0,0" Foreground="#FFDA5517" Background="{x:Null}" FontSize="18" FontWeight="Bold" VerticalAlignment="Top"/>
         <Label Content="по:" HorizontalAlignment="Left" Margin="300,8,0,0" Foreground="#FFDA5517" Background="{x:Null}" FontSize="18" FontWeight="Bold" VerticalAlignment="Top"/>
-        <DatePicker HorizontalAlignment="Left" FontSize="18" Margin="342,10,0,0" VerticalAlignment="Top" Width="146" FontWeight="Bold" Background="#FFDA5517" Foreground="#FF333333" Opacity="0.7"/>
+        <DatePicker x:Name="DataOUT" HorizontalAlignment="Left" FontSize="18" Margin="342,10,0,0" VerticalAlignment="Top" Width="146" FontWeight="Bold" Background="#FFDA5517" Foreground="#FF333333" Opacity="0.7"/>
         <DataGrid x:Name="grid" HorizontalAlignment="Left" Height="481" Margin="10,61,0,0" VerticalAlignment="Top" Width="819" Background="#FF060505" Foreground="#FFDA5517" FontSize="18" SelectionChanged="grid_SelectionChanged" FontStretch="ExtraCondensed" CanUserReorderColumns="False" MinColumnWidth="110" FontWeight="Bold" GridLinesVisibility="None" Opacity="0.8" CanUserResizeRows="False" RowBackground="#FF050404">
             <DataGrid.CellStyle>
                 <Style TargetType="DataGridCell" >
@@ -29,6 +29,6 @@
                 </Style>
             </DataGrid.CellStyle>
         </DataGrid>
-        <Button x:Name="filtr" Content="применить" HorizontalAlignment="Left" Height="35" Margin="542,8,0,0" VerticalAlignment="Top" Width="109" Click="filtr_Click" FontWeight="Bold" FontSize="14" Background="{x:Null}" Foreground="#FFDA5517"/>
+        <Button x:Name="ButtonFiltr" Content="применить" HorizontalAlignment="Left" Height="35" Margin="542,8,0,0" VerticalAlignment="Top" Width="109" Click="filtr_Click" FontWeight="Bold" FontSize="14" Background="{x:Null}" Foreground="#FFDA5517"/>
     </Grid>
 </Page>

@@ -41,24 +41,25 @@ namespace KmpPit
         // вариант 2
         //public static string connectString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Workers.mdb;";
         private OleDbConnection myConnection;
-
         public PagePit()
         {
             InitializeComponent();
+            DateTime myDateTime = DateTime.Today;
+            DataIN.DisplayDate = DateTime.Today;
+            DataOUT.DisplayDate = DateTime.Today;
+            DataIN.Text = DateTime.Today.ToString();
+            DataOUT.Text = DateTime.Today.ToString();
             myConnection = new OleDbConnection(connectString);
             myConnection.Open();
-            // текст запроса
-            // "WHERE Нетто BETWEEN 10 AND 21; ";
-            //DateTime thisDay = DateTime.Today;
-            DateTime myDateTime = DateTime.Now;
+            FiltrPit();
+        }
+
+        public void FiltrPit()
+        {
             string query = "SELECT Дата, Время, Авто, Н_карты, Вес_авто, Брутто, Нетто FROM VES " +
                            "WHERE Нетто BETWEEN 10 AND 21";
-            
-
-
             // создаем объект OleDbCommand для выполнения запроса к БД MS Access
             OleDbCommand command = new OleDbCommand(query, myConnection);
-            command.Parameters.AddWithValue("@DT", myDateTime);
             command.Parameters.AddWithValue("@avto", "AK 8266-1");
             // получаем объект OleDbDataReader для чтения табличного результата запроса SELECT
             OleDbDataReader reader = command.ExecuteReader();
@@ -69,7 +70,7 @@ namespace KmpPit
             while (reader.Read())
             {
                 // выводим данные столбцов текущей строки в listBox1
-                result.Add(new MyTable(reader[0].ToString().Remove(10, reader[0].ToString().Length-10),
+                result.Add(new MyTable(reader[0].ToString().Remove(10, reader[0].ToString().Length - 10),
                                        reader[1].ToString().Remove(0, 11),
                                        reader[2].ToString(),
                                        reader[3].ToString(),
@@ -101,8 +102,7 @@ namespace KmpPit
 
         private void filtr_Click(object sender, RoutedEventArgs e)
         {
-
-
+            FiltrPit();
         }
 
     }
